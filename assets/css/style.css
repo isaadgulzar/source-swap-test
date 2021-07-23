@@ -191,15 +191,26 @@ body, html {
     text-decoration: underline;
 }
 /* Grid Adjustments  */
-@media (min-width: 992px) and (max-width: 1315px) {
+@media (min-width: 992px) and (max-width: 1150px) {
     .col-lg-2 {
         flex: 0 0 auto;
-        width: 25.666667%; 
+        width: 20.666667%;
     }
     .col-lg-10 
     {     
         flex: 0 0 auto;     
-        width: 74.333333%;
+        width: 79.333333%;
+    }
+}
+@media (min-width: 1150px) and (max-width: 1315px) {
+    .col-lg-2 {
+        flex: 0 0 auto;
+        width: 19.666667%;
+    }
+    .col-lg-10 
+    {     
+        flex: 0 0 auto;     
+        width: 80.333333%;
     }
 }
 @media (min-width: 1315px) {
@@ -213,7 +224,17 @@ body, html {
         width: 81.333333%; 
     }
 }
-
+@media (min-width: 1450px) {
+    .col-lg-2 {
+        flex: auto;
+        max-width: 251px;
+    }
+    .col-lg-10 
+    {     
+        flex: auto;     
+        width: auto; 
+    }
+}
 /* Form  */
 .btn-blue{
     color: #fff;
@@ -243,21 +264,19 @@ body, html {
 }
 .el-tabs span {
     color: #fff;
-    font-size:24px;
+    font-size:20px;
     opacity: 0.5;
     padding:0px 4.5rem;
 }
 .el-tabs a {
     color: #fff;
-    font-size:24px;
+    font-size:20px;
     opacity: 0.5;
     text-decoration: none;
 }
 .el-tabs a.active {
     color: #fff;
-    font-size:23px;
     opacity: 1;
-    font-family: 'PoppinsBold';
 }
 .select-input-wrapper {
     position: relative;
@@ -399,8 +418,8 @@ body, html {
 /* media query */
 @media screen and (max-width: 768px) {
     .sidebar{
-        position: absolute !important;
-        width:70% !important;
+        position: fixed !important;
+        width: 100% !important;
         top: 0;
         left: 0;
         display:none;
