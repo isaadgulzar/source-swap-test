@@ -190,38 +190,58 @@ body, html {
     color: #3297F4;
     text-decoration: underline;
 }
-/* Grid Adjustments  */
-@media (min-width: 992px) and (max-width: 1150px) {
-    .col-lg-2 {
-        flex: 0 0 auto;
-        width: 20.666667%;
-    }
-    .col-lg-10 
-    {     
-        flex: 0 0 auto;     
-        width: 79.333333%;
+.sidebar-btn {
+    font-size: 12px !important;
+}
+@media (min-width: 992px) and (max-width: 1100px) {
+    .sidebar-btn {
+        font-size: 9px !important;
     }
 }
-@media (min-width: 1150px) and (max-width: 1315px) {
+@media (min-width: 1100px) and (max-width: 1165px) {
+    .sidebar-btn {
+        font-size: 11px !important;
+    }
+}
+/* Grid Adjustments  */
+
+@media (min-width: 992px) and (max-width: 1165px) {
     .col-lg-2 {
         flex: 0 0 auto;
-        width: 19.666667%;
+        width: 16.666667%;
     }
     .col-lg-10 
     {     
         flex: 0 0 auto;     
-        width: 80.333333%;
+        width: 83.333333%;
+    }
+}
+@media (min-width: 1165px) and (max-width: 1315px) {
+    .col-lg-2 {
+        flex: 0 0 auto;
+        width: 15.666667%;
+    }
+    .col-lg-10 
+    {     
+        flex: 0 0 auto;     
+        width: 84.333333%;
+    }
+    .sidebar-btn {
+        font-size: 11px !important;
     }
 }
 @media (min-width: 1315px) {
     .col-lg-2 {
         flex: 0 0 auto;
-        width: 18.666667%;
+        width: 14.666667%;
     }
     .col-lg-10 
     {     
         flex: 0 0 auto;     
-        width: 81.333333%; 
+        width: 85.333333%;
+    }
+    .sidebar-btn {
+        font-size: 11px !important;
     }
 }
 @media (min-width: 1450px) {
@@ -254,6 +274,7 @@ body, html {
 .sidebar-logo
 {
     margin-left: -10px;
+    max-width: 180px;
 }
 .ss-link {
     color: #3297F4 !important;
@@ -363,14 +384,6 @@ body, html {
     border-color: white !important;
     outline: none !important;
     box-shadow: none !important;
-}
-.sidebar-btn {
-    font-size: 15px !important;
-}
-@media (min-width: 992px) and (max-width: 1056px) {
-    .sidebar-btn {
-        font-size: 13px !important;
-    }
 }
 .sidebar-text{
     color: #7A7A7A;
