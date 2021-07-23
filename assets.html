@@ -15,7 +15,12 @@
    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-
+    <nav class="d-flex d-lg-none navbar navbar-expand-lg navbar-light bg-white py-0">
+        <div class="container-fluid">
+          <a class="navbar-brand py-0" href="#"><img style="width: 200px;" src="./assets/images/Sidebar_Logo.jpg" alt=""></a>
+          <button class="sidebar-button bg-blue border-0 d-block d-lg-none z-3" onclick="openLeftMenu()">&#9776;</button>
+        </div>
+    </nav>
     <div class="container-fluid h-100">
         <div class="row gx-4 h-100 align-items-center align-items-md-start justify-content-center justify-content-md-start">
             <!-- Sidebar  -->
@@ -29,7 +34,7 @@
                         <img src="./assets/images/Sidebar_Logo.png" class="sidebar-logo" alt="logo">
                     </div>
                     <div class="sidebar-body">
-                        <button class="btn btn-blue w-100 mt-3">Connect to Wallet</button>
+                        <button class="sidebar-btn btn btn-blue w-100 mt-3">Connect to Wallet</button>
                         <div class="mt-4 ">
                             <a href="./assets.html" class="sidebar-link d-flex align-items-center active">
                                 <svg class="me-3" xmlns="http://www.w3.org/2000/svg" width="35" height="31" viewBox="0 0 35 31"><defs><style>.a{fill:#7a7a7a;}.b{fill:#fff;}</style></defs><g transform="translate(-27 -195)"><rect width="35" height="31" rx="5" transform="translate(27 195)"/><g transform="translate(27.954 191.755)"><path class="b" d="M65.955,42.528c.021-.086,1.288-1.8,1.288-1.8a21.36,21.36,0,0,1,.6-3.135c.086-.215.429-.644.644-.6s.365.773.365.773l-.129,3.478-.666,3.135-2.877,3.95H62.391a24.082,24.082,0,0,1,.15-4.251A20.168,20.168,0,0,1,64.367,40.9s.558-.6.794-.537.365.623.365.859a17.377,17.377,0,0,1-.279,1.932Z" transform="translate(-43.162 -21.035)"/><path class="b" d="M80.14,42.032a12.747,12.747,0,0,0,.3-1.524c-.043-.086-.644-1.374-.644-1.374s-.365-.279-.494-.193c-.15.086-.236.558-.215.751A10.921,10.921,0,0,0,80.14,42.032Z" transform="translate(-56.294 -22.557)"/><path class="b" d="M77.836,50.313a13.219,13.219,0,0,0,.58,1.374l.6-.837-.6-.923s-.408-.193-.515-.107S77.814,50.206,77.836,50.313Z" transform="translate(-55.3 -31.096)"/><path class="b" d="M10.3,42.528c-.021-.086-1.288-1.8-1.288-1.8a21.359,21.359,0,0,0-.6-3.135c-.086-.215-.429-.644-.644-.6s-.365.773-.365.773l.129,3.478.666,3.135,2.877,3.95h2.791a24.082,24.082,0,0,0-.15-4.251A20.168,20.168,0,0,0,11.887,40.9s-.558-.6-.794-.537-.365.623-.365.859a17.377,17.377,0,0,0,.279,1.932Z" transform="translate(0 -21.035)"/><path class="b" d="M17.781,50.313a13.217,13.217,0,0,1-.58,1.374l-.6-.837.6-.923s.408-.193.515-.107S17.8,50.206,17.781,50.313Z" transform="translate(-7.225 -31.096)"/><path class="b" d="M14.886,42.032a12.744,12.744,0,0,1-.3-1.524c.043-.086.644-1.374.644-1.374s.365-.279.494-.193c.15.086.236.558.215.751A10.92,10.92,0,0,1,14.886,42.032Z" transform="translate(-5.64 -22.557)"/><path class="b" d="M29.116,12.776a683.477,683.477,0,0,1-.043-.043L27.527,10.35c-.021-.021-.021-.021-.021-.043l-.021-.021a.021.021,0,0,1-.021-.021c-.021-.021-.021-.021-.043-.021a.021.021,0,0,1-.021-.021c-.021,0-.021-.021-.043-.021H15.2a.075.075,0,0,0-.043.021h-.021a.021.021,0,0,0-.021.021c-.021,0-.021.021-.043.021a.021.021,0,0,0-.021.021c-.021.021-.021.043-.043.043l-1.567,2.4a.021.021,0,0,1-.021.021v.021a.021.021,0,0,1-.021.021h0v.172h0v.021a1367.152,1367.152,0,0,1,.043.043l.021.021.021.021,7.429,6.784a.353.353,0,0,0,.322.172.378.378,0,0,0,.279-.129c.021-.021.021-.043.043-.064l7.429-6.784.021-.021h.021a683.492,683.492,0,0,0,.043-.043V12.97h0v-.15l.043-.043Zm-1.975-1.718.9,1.4h-2.3Zm-2.383,1.288-2.254-1.5H26.26Zm-3.156.129v-1.31l1.954,1.31Zm0,.751h2.576L21.6,18.165Zm3.435,0h2.727l-5.174,4.723ZM15.354,11.08l1.4,1.4h-2.3l.451-.709Zm2.083,2.147,2.469,4.723-5.174-4.723Zm3.414,0v4.917L18.3,13.227Zm0-2.018v1.267H18.918Zm-3.113,1.138-1.5-1.5h3.779Z" transform="translate(-4.712)"/></g></g></svg>
@@ -70,7 +75,7 @@
                             </a>
                             <a href="https://twitter.com/" class="sidebar-link d-flex align-items-center active">
                                 <svg class="me-3" xmlns="http://www.w3.org/2000/svg" width="35" height="31" viewBox="0 0 35 31"><defs></defs><g transform="translate(-27 -694)"><rect fill="#3297F4" width="35" height="31" rx="5" transform="translate(27 694)"/><path class="b" d="M46.851,36.12a8.9,8.9,0,0,1-2.563.7,4.474,4.474,0,0,0,1.962-2.468,8.932,8.932,0,0,1-2.833,1.082,4.466,4.466,0,0,0-7.6,4.07,12.666,12.666,0,0,1-9.2-4.663A4.467,4.467,0,0,0,28,40.8a4.431,4.431,0,0,1-2.021-.559c0,.019,0,.038,0,.057a4.465,4.465,0,0,0,3.579,4.375,4.479,4.479,0,0,1-2.015.077,4.467,4.467,0,0,0,4.168,3.1A9.007,9.007,0,0,1,25.1,49.7,12.689,12.689,0,0,0,44.638,39.007c0-.193,0-.386-.013-.577a9.048,9.048,0,0,0,2.227-2.309Z" transform="translate(8.897 666.972)"/></g></svg>
-                                <p class="sidebar-text">Twitter</p>
+                                <span class="sidebar-text">Twitter</span>
                             </a> 
                         </div>
                     </div>
@@ -79,17 +84,6 @@
             <!-- Content  -->
             <div class="col-12 wrapper col-lg-10 px-0">
                 <div id="particles-js" class="content-wrapper bg-blue d-flex flex-column align-items-center justify-content-start px-md-5">
-                    <div class="w-50 mt-5 mx-auto z-3">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-12 mx-auto text-center">
-                                    <a href="#">
-                                        <img class="logo" src="./assets/images/Logo.svg" alt="">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                     <div class="w-100 mx-auto content-wrapper-white py-5 py-md-4 px-3 mt-5">
                         <div class="container px-0 px-md-4">
                             <div class="row">
@@ -205,7 +199,6 @@
                 </div>
             </div>
         </div>
-        <button class="sidebar-button bg-blue border-0 d-block d-lg-none z-3" onclick="openLeftMenu()">&#9776;</button>
     </div>
 
     <script src="./assets/js/sidebar.js"></script>

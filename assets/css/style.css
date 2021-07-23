@@ -364,14 +364,17 @@ body, html {
     outline: none !important;
     box-shadow: none !important;
 }
+.sidebar-btn {
+    font-size: 15px !important;
+}
+@media (min-width: 992px) and (max-width: 1056px) {
+    .sidebar-btn {
+        font-size: 13px !important;
+    }
+}
 .sidebar-text{
     color: #7A7A7A;
-}
-.sidebar-button {
-    position: absolute;
-    color: #ffffff;
-    top: 5px;
-    left: 5px;
+    font-size: 15px;
 }
 .sidebar {
     z-index: 9999 !important;
@@ -395,8 +398,8 @@ body, html {
     font-size: 26px;
     position: absolute;
     color: #3297F4;
-    top: 5px;
-    right: 5px;
+    top: 7px;
+    right: 15px;
 }
 
 .sidebar-line{
@@ -416,6 +419,13 @@ body, html {
     color: #7A7A7A !important;
 }
 /* media query */
+@media screen and (max-width: 992px) {
+    .sidebar-button {
+        font-size: 24px;
+        color: #3297F4 !important;
+        background: transparent !important;
+    }
+}
 @media screen and (max-width: 768px) {
     .sidebar{
         position: fixed !important;
@@ -423,14 +433,6 @@ body, html {
         top: 0;
         left: 0;
         display:none;
-    }
-    .sidebar-button {
-        position: absolute;
-        font-size: 26px;
-        color: #3297F4 !important;
-        background: transparent !important;
-        top: 3px;
-        left: 3px;
     }
 }
 @media screen and (max-width: 576px) {
@@ -452,9 +454,6 @@ body, html {
     .sidebar {
         border-right: 1px solid #3297F4;
         border-bottom: 1px solid #3297F4;
-    }
-    .sidebar-button {
-        color: #ffffff !important;
     }
     .el-tabs span {
         color: #fff;
